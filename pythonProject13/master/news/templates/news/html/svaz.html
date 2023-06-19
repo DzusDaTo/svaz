@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Форма обратной связи/внесения правок</h1>
+    <form method="post" class="contact-main-from">
+                {% csrf_token %}
+                {{ form.last_name }}
+                {{ form.first_name }}
+                {{ form.sposob }}
+                {{ form.pravki }}
+                <button type="submit" class="send-button"><h3>Отправить</h3></button>
+                <h3>*Заполните все поля и отправьте форму.</h3>
+            </form>
+</body>
+</html>

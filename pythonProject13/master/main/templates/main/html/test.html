@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in video_list %}
+    <div>
+        <h3>{{i.last_name}}</h3>
+        <h3>{{i.first_name}}</h3>
+        <h3>{{i.biografy}}</h3>
+        <img src="{{ i.image.url }}">
+        <h3>{{i.email}}</h3>
+        <h3>{{i.data_roj}}</h3>
+        <h1>----------------</h1>
+
+    </div>
+    {% endfor %}
+</body>
+</html>
